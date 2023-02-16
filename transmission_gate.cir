@@ -1,0 +1,17 @@
+.title transmission_gate
+.include techfile130.txt
+
+vdd vdd 0 1.2
+vin vi 0 PULSE(0 1.2 2NS 2NS 2NS 50NS 100NS)
+
+Mp vout 0 vi vdd pmos l=120n w=720n 
+Mn vout vdd vi 0 nmos l=120n w=240n
+
+.tran 0.1n 500n 0 0.1n
+
+.control
+run 
+plot v(vi)
+plot v(vout)
+.endc
+.end

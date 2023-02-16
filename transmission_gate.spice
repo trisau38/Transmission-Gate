@@ -1,0 +1,11 @@
+* SPICE3 file created from transmission_gate.ext - technology: scmos
+
+.option scale=1u
+
+M1000 a_n5_n3# GND in VDD pfet w=24 l=4
++  ad=216 pd=66 as=192 ps=64
+M1001 a_n5_n22# VDD in Gnd nfet w=8 l=4
++  ad=72 pd=34 as=64 ps=32
+C0 GND VDD 4.43fF
+C1 GND Gnd 4.32fF
+C2 VDD Gnd 28.50fF
